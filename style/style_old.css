@@ -1,0 +1,188 @@
+/*Обнуление стилей*/
+*, *:after, *:before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s ease-in-out;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
+/*Хедер*/
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 13px 0 12px 0;
+    max-width: 1526px;
+
+}
+
+.logo{
+    width: 88.59px;
+    height: 34px;
+}
+
+/* nav ul{
+
+} */
+
+nav ul li{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 58px;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+.entry{
+    font-size: 15px;
+    text-align: center;
+    margin: 0 98.35px 0 34.41px;
+    border: 1px solid #573E0D;
+    border-radius: 2px;
+    padding: 6px 16px;
+}
+
+.contact{
+    display: flex;
+    margin-left: 37px;
+}
+
+.contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #836A10;
+}
+
+.contact div:first-child{
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+.contact div:last-child{font-size: 12px;}
+
+/* Основное тело */
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content_title{
+    background: url(../img/Фон.png);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1526px;
+    height: 652px;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    position: relative;
+}
+
+.main_icon{
+    width: 480px;
+    height: 396px;
+    position: absolute;
+    left: 665px;
+    top: 391px;
+    /* margin-bottom: -135px; */
+}
+
+.content_name{
+    margin: 68px auto 19px 0;
+    max-width: 1030px;
+    font-size: 90px;
+    line-height: 87.6px;
+    color: #ffffff;
+}
+
+.container div:nth-child(2){
+    margin-left: 0;
+    font-size: 20px;
+    width: 350px;
+    color: #2E2401;
+}
+
+.container div:nth-child(3){
+    margin-top: 4px;
+    /* margin-left: 208px; */
+}
+
+.container div:nth-child(3) ul li{
+    font-size: 26px;
+    display: inline-block;
+    margin-right: 48px;
+    color: #2E2401;
+}
+
+/* .container div:nth-child(3) ul li:before{
+    display: '\B7';
+    display: inline-block;
+    overflow: hidden;
+    border-bottom: 3px dotted #2E2401;
+    margin-top: -6px;
+} */
+
+.container div:nth-child(4){
+    margin: 35px auto 27px 0;
+    font-size: 17px;
+    line-height: 20.72px;
+    color: #2E2401;
+}
+
+.container button{
+    width: 319.57px;
+    height: 59px;
+    margin: 27px auto 63px 0;
+    border: none;
+    background: linear-gradient(189.03deg, #2D3FE2 9.57%, #071169 95.91%);
+    box-shadow: 0px 11px 21px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    color: #FFFDF8;
+    font-size: 17px;
+}
+
+.container button:hover{
+    background: linear-gradient(189.03deg, #6474FF 9.57%, #041AE1 95.91%);
+    box-shadow: 0px 11px 21px rgba(0, 0, 0, 0.25);
+}
+
+.container button:active{
+    background: linear-gradient(189.03deg, #071695 9.57%, #071169 95.91%);
+    box-shadow: 0px 11px 21px rgba(0, 0, 0, 0.25);
+}
