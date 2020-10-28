@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /*Обнуление стилей*/
 *,
@@ -31,6 +32,7 @@ section{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /*Хедер*/
@@ -38,6 +40,7 @@ section{
 header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     background: white;
 }
@@ -46,7 +49,8 @@ header {
     display: flex;
     align-items: center;
     margin: 13px 0 12px 0;
-    max-width: 1526px;
+    max-width: 1140px;
+    width: 100%;
 }
 
 .logo {
@@ -54,17 +58,21 @@ header {
     height: 34px;
 }
 
+nav{
+    max-width: 533px;
+    width: 100%;
+}
+
 #menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
     li {
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         display: inline-flex;
-        margin-right: 58px;
-        &:last-child {
-            margin-right: 0;
-        }
         a {
             color: #2e2401;
         }
@@ -153,6 +161,7 @@ main {
     display: flex;
     flex-direction: column;
     // justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1140px;
     height: 100%;
@@ -160,6 +169,7 @@ main {
 }
 
 .text {
+    align-self: baseline;
     margin-left: 0;
     font-size: 20px;
     font-family: Montserrat Alternates;
@@ -170,12 +180,14 @@ main {
 }
 
 .cours {
+    align-self: baseline;
     margin-top: 4px; 
     font-family: Microsoft YaHei;
     font-style: normal;
     font-weight: bold;
     font-weight: 900;
     max-width: 1058px;
+    width: 100%;
     ul {
         display: flex;
         justify-content: space-between;
@@ -221,6 +233,7 @@ main {
 }
 
 .adres {
+    align-self: baseline;
     width: 399px;
     height: 31px;
     display: flex;
@@ -364,7 +377,6 @@ main {
 
 .text_3 {
     display: flex;
-    margin: 30px 0 24px 0;
     span {
         font-size: 16px;
         line-height: 190%;
@@ -395,18 +407,20 @@ main {
 }
 
 .format_title {
+    align-self: baseline;
     font-size: 45px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     line-height: 55px;
     color: #fffdf3;
-    width: 590px;
-    height: 114px;
+    width: 822px;
+    height: 55px;
     margin-bottom: 18px;
 }
 
 .format_text {
+    align-self: baseline;
     width: 285px;
     height: 29px;
     font-size: 17px;
@@ -421,23 +435,38 @@ main {
     font-weight: 300;
 }
 
+.left_title{
+    width: 476px;
+    margin: 30px 0 24px 0;
+}
+
+.right_title{
+    width: 475px;
+    margin: 30px 0 24px 0;
+}
+
 .format_type {
     display: flex;
     justify-content: space-between;
-    width: 900px;
-    margin: 35px auto auto 210px;
+    align-self: flex-end;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 35px;
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
         span {
-            font-size: 14px;
+            width: 180px;
             font-family: Montserrat;
             font-style: normal;
             font-weight: 500;
-            color: #ffffff;
+            font-size: 14px;
             line-height: 17px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 20px;
         }
     }
 }
@@ -457,7 +486,7 @@ main {
         height: 45px;
         margin: 36px 0 19px 0;
     }
-    span {
+    .format_type_img_span {
         font-size: 23px;
         font-family: Montserrat Alternates;
         font-style: normal;
@@ -474,9 +503,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: 86px 95px 155px auto;
     span {
+        width: 730px;
+        height: 49px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
@@ -491,6 +523,9 @@ main {
 
 .fon {
     display: flex;
+    max-width: 892px;
+    width: 100%;
+    justify-content: space-between;
     div {
         display: flex;
         align-items: center;
@@ -498,35 +533,29 @@ main {
     }
 }
 
-.left_block {
-    margin-right: 155px;
-    span {
-        width: 290px;
-        height: 43px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #2e2401;
-    }
-}
-
-.rigth_block {
-    margin-left: 155px;
-    span {
-        width: 290px;
-        height: 43px;
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: center;
-        text-transform: uppercase;
-        color: #2e2401;
+.left_block, .rigth_block {
+    justify-content: space-between;
+    height: 417px;
+    // height: 100%;
+    div{
+        
+        span {
+            width: 290px;
+            height: 43px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #2e2401;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+        .span_bot{
+            height: 24px;
+        }
     }
 }
 
@@ -559,6 +588,7 @@ main {
 .bonus {
     width: 70px;
     height: 80px;
+    margin-bottom: 18px;
 }
 
 .line {
@@ -568,7 +598,8 @@ main {
 .container_put {
     display: flex;
     flex-direction: column;
-    width: 1038px;
+    max-width: 1038px;
+    width: 100%;
     height: 716.57px;
     margin-bottom: 85.53px;
 }
@@ -675,7 +706,7 @@ main {
 
 .cours_type{
     display: flex;
-    margin: 74px 140px 56px 140px;
+    margin: 74px 0 56px 0;
     justify-content: space-evenly;
     width: 96%;
     .nth_cours_block{
@@ -789,8 +820,28 @@ main {
     color: #2E2401;
 }
 
+.all_cours_hide{
+    display: none;
+    width: 290px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color: #2E2401;
+}
+
 .diplon_conteiner{
     margin: 57px auto 62px auto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1140px;
+    height: 100%;
+    position: relative;
 }
 
 .diplom_project{
@@ -802,7 +853,7 @@ main {
     /* identical to box height */
     color: #2E2401;
     width: 1106px;
-height: 61px;
+    height: 61px;
 }
 
 .diplom_info{
@@ -1067,18 +1118,21 @@ height: 61px;
 
 .conteiner_faq_info{
     display: flex;
+    justify-content: space-between;
 }
 
 .block_text_faq{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     max-width: 473px;
-    margin: 35px 144px auto 0;
+    height: 338px;
+    margin: 35px auto auto 0;
 }
 
 .text_faq{
     width: 473px;
-    height: 22px;
+    // height: 22px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 300;
@@ -1086,7 +1140,7 @@ height: 61px;
     line-height: 22px;
     /* identical to box height */
     color: #100D00;
-    margin-bottom: 31px;
+    // margin-bottom: 31px;
 }
 
 .faq_primary{
@@ -1103,7 +1157,7 @@ height: 61px;
 }
 
 .faq_second{
-    height: 22px;
+    // height: 22px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -1113,7 +1167,7 @@ height: 61px;
     display: flex;
     align-items: center;
     color: #0B0800;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 }
 
 .faq_info{
@@ -1309,16 +1363,18 @@ height: 61px;
 
 footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .footer_ection{
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, #082A85 0%, #082165 100%);
 }
 
 .footer_main{
-    background: linear-gradient(180deg, #082A85 0%, #082165 100%);
     width: 100%;
     display: flex;
 }
@@ -1327,7 +1383,7 @@ footer{
     display: flex;
     flex-direction: column;
     width: 428px;
-    margin: 19px 65px 21px auto;
+    margin: 19px auto 21px 160px;
     span{
         width: 380px;
         height: 16px;
@@ -1360,7 +1416,7 @@ footer{
             // color: #D0D0D0;
             margin: 0 auto 12px 48px;
         }
-        #name_foophone_footerter{
+        #phone_footer{
             text-transform: uppercase;
         }
         button{
@@ -1393,10 +1449,6 @@ footer{
     width: 78px;
     height: 30px;
     margin: 0 auto 0 48px;
-    img{
-        width: 100%;
-        height: 100%;
-    }
 }
 
 .footer_info_block{
@@ -1433,7 +1485,7 @@ footer{
     width: 185px;
     display: flex;
     flex-direction: column;
-    margin: auto auto 17px 70px;
+    margin: auto 208px 17px auto;
 }
 
 .icons{
@@ -1587,13 +1639,8 @@ footer{
         
     }
 
-    #menu {
-        li {
-            margin-right: 41px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
+    nav{
+        max-width: 481px;
     }
 
     /*main*/
@@ -1656,5 +1703,462 @@ footer{
         top: 400px;
         right: 1px;
         left: auto;
+    }
+
+    /*Блок с кнопкой*/
+
+    .test_button_test{
+        font-size: 22px;
+    }
+
+    /*Блок в правильным выбором*/
+
+    .itec{
+        margin: 21px auto 71px auto;
+        max-width: 930px;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .itec_title{
+        font-size: 50px;
+        width: 851px;
+        height: 67px;
+    }
+
+    .left_title{
+        width: 640px;
+        margin: 21px 0 0 0;
+    }
+
+    .right_title{
+        width: 480px;
+        margin: 50px 0 0 0;
+    }
+
+    .itec_img{
+        margin: 28px auto 23px 120px;
+        width: 200px;
+        height: 200px;
+    }
+
+    /*Блок про три формы обучения*/
+
+    .rectangle_white{
+        display: none;
+    }
+
+    .format_title{
+        width: 770px;
+        height: 57px;
+        font-size: 40px;
+        line-height: 49px;
+        margin-top: 29px;
+        margin-bottom: 5px;
+    }    
+
+    .format_text{
+        width: 299px;
+        height: 29px;
+    }
+
+    .format_type{
+        max-width: 810px;
+        div{
+            span{
+                width: 162px;
+                margin-top: 18.5px;
+            }
+        }
+    }
+
+    .format_type_img{
+        width: 162px;
+        height: 165px;
+        img{
+            width: 40px;
+            height: 42px;
+            margin: 33px auto 0 auto;
+        }
+    }
+
+    .format_type_img_span{
+        margin-bottom: 41px;
+        margin-top: 17.5px;
+    }
+
+    .vibor{
+        max-width: 620px;
+        margin: 86px 0 98px 0;
+        span{
+            width: 620px;
+            height: 46px;
+            margin-bottom: 54px;
+            text-transform: none;
+        }
+    }
+
+    .left_block, .rigth_block {
+        height: 352px;
+        div{
+            span {
+                width: 235px;
+                height: 49px;
+                text-transform: none;
+            }
+            .span_bot{
+                height: 21px;
+                margin-top: 23px;
+            }
+        }
+    }
+
+    .fon{
+        .line{
+            display: none;
+        }
+    }
+
+    .dostup{
+        width: 82px;
+        height: 82px;
+    }
+
+    .oplata{
+        width: 74;
+        height: 82px;
+    }
+
+    .mosk{
+        width: 65px;
+        height: 82px;
+    }
+
+    .bonus{
+        width: 82px;
+        height: 82px;
+        margin-bottom: 1px;
+    }
+
+    .container_put{
+        display: none;
+    }
+
+    .conteiner_nht_cours{
+        max-width: 840px;
+    }
+
+    .nth_cours{
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+    .cours_type{
+        margin: 42px 0 55px 0;
+        .nth_cours_block{
+            width: 245px;
+            height: 307px;
+        }
+    }
+
+    .nth_cours_name{
+        width: 245px;
+        height: 35px;
+        font-size: 27px;
+        line-height: 36px;
+        top: 80px;
+
+    }
+
+    .all_cours{
+        display: none;
+    }
+
+    .all_cours_hide{
+        display: block;
+    }
+
+    .cours_type{
+        .nth_cours_block{
+            span{
+                font-size: 17px;
+                line-height: 21px;
+                letter-spacing: 0.05em;
+                margin: 44.65px auto;
+            }
+            .nth_cours_img{
+                width: 114.6px;
+                height: 146.52px;
+                margin-top: 48.84px;
+            }
+        }
+    }
+
+    .desc{
+        display: none;
+    }
+
+    .diplon_conteiner{
+        max-width: 897px;
+        margin: 76px 0 95px 0;
+    }
+
+    .diplom_project{
+        align-self: baseline;
+        width: 720px;
+        height: 112px;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    .diplom_info{
+        margin: 5px 0 0 0;
+    }
+
+    .diplom_img{
+        display: none;
+    }
+
+    .slider{
+        margin-left: 31px;
+        height: 433px;
+    }
+
+    .prev{
+        width: 24px;
+        height: 33px;
+        margin: 258px 50px auto 0;
+    }
+
+    .next{
+        width: 35px;
+        height: 48px;
+        margin: 251px 0 auto 37px;
+    }
+
+    .slider_main{
+        width: 100%;
+    }
+
+    .conteiner_help{
+        display: none;
+    }
+
+    .conteiner_teacher{
+        max-width: 905px;
+        margin: 0 72px 0 47px;
+    }
+
+    .text_title_teacher{
+        font-size: 40px;
+        line-height: 49px;
+        letter-spacing: 0.02em;
+    }
+
+    .text_teacher{
+        width: 560px;
+        height: 128px;
+        font-size: 18px;
+        line-height: 180%;
+        margin-top: 25px;
+    }
+
+    .teacher_img_conteiner{
+        margin-top: 52px;
+    }
+
+    .img_teacher{
+        width: 200px;
+        height: 300px;
+    }
+    
+    .teacher_profil{
+        margin-top: 5px;
+    }
+
+    .teacher_staj{
+        margin-top: 5px;
+    }
+
+    .conteiner_faq{
+        max-width: 977px;
+        margin: 64px 0 auto 47px;
+        margin-bottom: 51px;
+    }
+
+    .text_faq{
+        width: 450px;
+        font-size: 20px;
+        line-height: 26px;
+        color: #2E2401;
+    }
+
+    .faq_primary{
+        color: #716F69;
+    }
+
+    .faq_second{
+        font-weight: normal;
+    }
+
+    .faq_info{
+        max-width: 497px;
+        height: 229px;
+        span{
+            width: 397px;
+            height: 197px;
+            margin-left: 68px;
+            font-size: 17px;
+            line-height: 180%;
+        }
+    }
+
+    .rectangle_faq_absolut{
+        width: 25px;
+        height: 85px;
+        left: 25px;
+        top: -19px;
+    }
+
+    /*Место для кучи стилей*/
+
+    .last_block_ura{
+        display: none;
+    }
+
+    /*Футер*/
+
+    .footer_ection{
+
+    }
+
+    .footer_main{
+        max-width: 930px;
+        flex-wrap: wrap;
+    }
+
+    .footer_consult_block{
+        margin: 27px auto auto 0;
+        max-height: 260px;
+        span{
+            margin-left: 0;
+            width: 361px;
+            height: 16px;
+
+        }
+        form{
+            height: 153px;
+
+            input[type="text"]{
+                width: 290px;
+                height: 42px;
+                font-size: 17px;
+                line-height: 21px;
+                margin: auto auto 11px 0;
+            }
+            button{
+                width: 290px;
+                height: 44px;
+                margin: 3px auto 0 0;
+            }
+        }
+    }
+
+    .footer_logo{
+        width: 127px;
+        height: 47px;
+        margin: 20px auto 0 0;
+    }
+
+    .footer_info_block{
+        height: 230px;
+        max-width: 480px;
+        width: 100%;
+        margin: 67px 0 auto auto;
+    }
+
+    .info_column{
+        width: 180px;
+        height: 206px;
+        a{
+            width: 180px;
+        }
+    }
+
+    .info_column_2{
+        a{
+            width: 240px;
+        }
+    }
+
+    .info_column a, .info_column_2 a{
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .footer_contacts{
+        margin-left: 0;
+        margin-top: 20.8px;
+        margin-bottom: auto;
+        width: auto;
+    }
+
+    .icons{
+        align-self: baseline;
+        width: 118px;
+        margin-bottom: 14.52px;
+    }
+
+    .icon{
+        width: 29.54px;
+        height: 28.48px;
+    }
+
+    .wrapper_footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .location_footer{
+        align-items: baseline;
+        width: 235px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        span{
+            text-align: left;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #DEE4EE;
+        }
+        a{
+            text-align: left;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #DEE4EE;
+        }
+    }
+
+    .numbers{
+        align-items: baseline;
+        span{
+            width: 135px;
+            height: 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.005em;
+            color: #DEE4EE;
+            text-align: left;
+        }
+    }
+
+    .footer_last_block{
+        font-size: 13px;
     }
 }
