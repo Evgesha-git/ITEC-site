@@ -9,7 +9,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    transition: 0.5s ease-in-out;
+    transition: width 0.5s, height 0.5s ease-in-out;
 }
 
 ul {
@@ -27,7 +27,7 @@ img {
     height: 100%;
 }
 
-section{
+section {
     max-width: 1526px;
     width: 100%;
     display: flex;
@@ -58,7 +58,49 @@ header {
     height: 34px;
 }
 
-nav{
+.ham {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.line_ham {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #7C5C0A;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham8 .top {
+    stroke-dasharray: 100 180;
+}
+.ham8 .middle {
+    stroke-dasharray: 100 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+.ham8 .bottom {
+    stroke-dasharray: 100 185;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+    stroke-dashoffset: -174px;
+}
+.ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+}
+.ham8.active .bottom {
+    stroke-dashoffset: -174px;
+}
+
+nav {
     max-width: 533px;
     width: 100%;
 }
@@ -181,7 +223,7 @@ main {
 
 .cours {
     align-self: baseline;
-    margin-top: 4px; 
+    margin-top: 4px;
     font-family: Microsoft YaHei;
     font-style: normal;
     font-weight: bold;
@@ -300,7 +342,7 @@ main {
             font-size: 30px;
             line-height: 37px;
             text-align: center;
-            color: #2E2401;
+            color: #2e2401;
             margin-bottom: 29px;
         }
         span:last-child {
@@ -337,10 +379,9 @@ main {
     &:active {
         background: linear-gradient(180deg, #ffc700 0%, #ffd600 100%);
     }
-    
 }
 
-.test_button_test{
+.test_button_test {
     margin: 16px auto 53px auto;
 }
 
@@ -435,12 +476,12 @@ main {
     font-weight: 300;
 }
 
-.left_title{
-    width: 476px;
+.left_title {
+    width: 540px;
     margin: 30px 0 24px 0;
 }
 
-.right_title{
+.right_title {
     width: 475px;
     margin: 30px 0 24px 0;
 }
@@ -465,7 +506,7 @@ main {
             font-size: 14px;
             line-height: 17px;
             text-align: center;
-            color: #FFFFFF;
+            color: #ffffff;
             margin-top: 20px;
         }
     }
@@ -519,6 +560,9 @@ main {
         color: #2e2401;
         margin-bottom: 82px;
     }
+    span:nth-child(2){
+        display: none;
+    }
 }
 
 .fon {
@@ -533,12 +577,12 @@ main {
     }
 }
 
-.left_block, .rigth_block {
+.left_block,
+.rigth_block {
     justify-content: space-between;
     height: 417px;
     // height: 100%;
-    div{
-        
+    div {
         span {
             width: 290px;
             height: 43px;
@@ -553,7 +597,7 @@ main {
             margin-bottom: 0;
             margin-top: 20px;
         }
-        .span_bot{
+        .span_bot {
             height: 24px;
         }
     }
@@ -593,6 +637,10 @@ main {
 
 .line {
     margin-top: calc(174px - 82px);
+}
+
+.fon_min{
+    display: none;
 }
 
 .container_put {
@@ -683,7 +731,7 @@ main {
     color: rgba(46, 36, 1, 0.85);
 }
 
-.conteiner_nht_cours{
+.conteiner_nht_cours {
     max-width: 1262.95px;
     width: 100%;
     display: flex;
@@ -692,7 +740,7 @@ main {
     align-items: center;
 }
 
-.nth_cours{
+.nth_cours {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -701,27 +749,28 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
 }
 
-.cours_type{
+.cours_type {
     display: flex;
     margin: 74px 0 56px 0;
     justify-content: space-evenly;
     width: 96%;
-    .nth_cours_block{
+    .nth_cours_block {
         width: 285px;
         height: 400px;
-        background: linear-gradient(180deg, #4C7DFB 0%, #001D69 100%);
+        background: linear-gradient(180deg, #4c7dfb 0%, #001d69 100%);
         box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
         position: relative;
         box-shadow: inset 3px 5px 15px rgba(147, 177, 235, 0.73);
         // filter: drop-shadow(-3px -3px 16px rgba(10, 41, 124, 0.13)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        span{
+        span {
             font-family: Montserrat;
             font-style: normal;
             font-weight: 300;
@@ -729,41 +778,45 @@ main {
             line-height: 23px;
             text-align: center;
             letter-spacing: 0.01em;
-            color: #FFFFFF;
-            margin: 39px auto 28px auto;
+            color: #ffffff;
+            // margin: 39px auto 28px auto;
         }
 
-        .nth_cours_img{
+        .nth_cours_img {
             width: 130px;
             height: 153px;
-            margin-top: 56px;
+            // margin-top: 56px;
             // border: 2px solid transparent;
             // border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, #F2F6FF 100%);
             filter: drop-shadow(0px 25px 29px rgba(0, 0, 0, 0.25));
             // border-radius: 3px;
-            &:before{
+            &:before {
                 content: "";
                 position: absolute;
                 top: 3px;
                 left: 3px;
                 bottom: 3px;
                 right: 3px;
-                background: linear-gradient(180deg, #3F6CE0 0%, #20439D 100%);
+                background: linear-gradient(180deg, #3f6ce0 0%, #20439d 100%);
                 z-index: -1;
                 border-radius: 3px;
             }
-            &:after{
-                content: '';
+            &:after {
+                content: "";
                 position: absolute;
                 top: 0;
                 left: 0;
                 height: 100%;
                 width: 100%;
-                background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, #F2F6FF 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(255, 255, 255, 0.01) 0%,
+                    #f2f6ff 100%
+                );
                 z-index: -2;
                 border-radius: 3px;
             }
-            img{
+            img {
                 width: 98%;
                 height: 98%;
                 margin-left: 2px;
@@ -772,30 +825,34 @@ main {
     }
 }
 
-.nth_cours_name{
+.nth_cours_name {
     position: absolute;
     z-index: 1;
     top: 70px;
     left: 1px;
     width: 283px;
+    height: 93px;
     font-family: Gadugi, Arial;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 125%;
-    /* or 40px */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     letter-spacing: 0.015em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #ffffff;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.desc{
-    border: 1px solid #FFFFFF;
+.nth_cours_name_min {
+    display: none;
+}
+
+.desc {
+    border: 1px solid #ffffff;
     border-radius: 3px;
     background: rgba(255, 255, 255, 0);
     width: 200px;
@@ -807,20 +864,20 @@ main {
     line-height: 18px;
     text-align: center;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-.all_cours{
+.all_cours {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 17px;
     line-height: 21px;
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
 }
 
-.all_cours_hide{
+.all_cours_hide {
     display: none;
     width: 290px;
     font-family: Montserrat;
@@ -829,139 +886,78 @@ main {
     font-size: 23px;
     line-height: 28px;
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
 }
 
-.diplon_conteiner{
-    margin: 57px auto 62px auto;
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1140px;
-    height: 100%;
-    position: relative;
-}
 
-.diplom_project{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 61px;
-    /* identical to box height */
-    color: #2E2401;
-    width: 1106px;
-    height: 61px;
-}
+// .slider_main{
+//     width: 710px;
+// }
 
-.diplom_info{
-    display: flex;
-    margin: 138px auto 9px 0;
-}
-
-.diplom_img{
-    width: 200px;
-    height: 185px;
-    margin: 21px auto 0 auto;
-}
-
-.slider{
-    width: 872px;
-    height: 283px;
-    margin-left: 53px;
-    display: flex;
-}
-
-.prev{
-    width: 26px;
-    height: 33px;
-    background: url(../img/slider/Vector.svg) no-repeat;
-    margin: 234px 2px 237px 0;
-    &:hover{
-        background: url(../img/slider/Vector_hov.svg) no-repeat;
-    }
-}
-
-.next{
-    width: 40px;
-    height: 48px;
-    background: url(../img/slider/Vector_next.svg) no-repeat;
-    margin: 227px 48px 228px 0;
-    &:hover{
-        background: url(../img/slider/Vector_next_hov.svg) no-repeat;
-    }
-}
-
-.slider_main{
-    width: 756px;
-}
-
-.conteiner_help{
+.conteiner_help {
     max-width: 1526px;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.arrow_down{
+.arrow_down {
     display: flex;
     align-items: center;
     justify-content: center;
-    div{
+    div {
         width: 59px;
         height: 36px;
-        img{
+        img {
             width: 100%;
             height: 100%;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
             margin: auto 262px 9px 262px;
         }
     }
 }
 
-.help_block{
+.help_block {
     background: url(../img/helper/backgroung_helper.svg) no-repeat content-box;
     width: auto;
     height: 406px;
 }
 
-.content_help{
+.content_help {
     margin: 39px 357px 0 273px;
     width: 896px;
     display: flex;
     flex-direction: column;
 }
 
-.help_text_1{
+.help_text_1 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
     line-height: 21px;
-    color: #F1F4FF;
+    color: #f1f4ff;
     width: 160px;
     height: 22px;
     margin-bottom: 17px;
 }
 
-.help_text_2{
+.help_text_2 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
     /* identical to box height */
-    color: #EFF4FF;
+    color: #eff4ff;
     width: 319px;
     height: 27px;
     margin-left: 61px;
     margin-bottom: 25px;
 }
 
-.help_text_3{
+.help_text_3 {
     display: flex;
     align-self: flex-end;
     width: 771px;
@@ -972,11 +968,11 @@ main {
     font-size: 44px;
     line-height: 54px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
-.help_text_4{
+.help_text_4 {
     width: 410px;
     height: 46px;
     font-family: Montserrat;
@@ -986,17 +982,17 @@ main {
     line-height: 170%;
     /* or 24px */
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     display: flex;
     align-self: center;
     margin-bottom: 41px;
 }
 
-.test_button{
+.test_button {
     margin: 0 auto 57px auto;
 }
 
-.conteiner_teacher{
+.conteiner_teacher {
     width: 1104px;
     // width: 100%;
     display: flex;
@@ -1005,11 +1001,11 @@ main {
     margin: 36px 218px 0 204px;
 }
 
-.rectangle_teacher{
+.rectangle_teacher {
     margin-top: 74px;
 }
 
-.text_title_teacher{
+.text_title_teacher {
     width: 590px;
     height: 66px;
     font-family: Montserrat;
@@ -1017,10 +1013,10 @@ main {
     font-weight: bold;
     font-size: 50px;
     line-height: 61px;
-    color: #2E2401;
+    color: #2e2401;
 }
 
-.text_teacher{
+.text_teacher {
     width: 558px;
     height: 119px;
     font-family: Montserrat;
@@ -1029,10 +1025,10 @@ main {
     font-size: 17px;
     line-height: 170%;
     /* or 29px */
-    color: #493B08;
+    color: #493b08;
 }
 
-.teacher_img_conteiner{
+.teacher_img_conteiner {
     width: 910px;
     display: flex;
     justify-content: space-between;
@@ -1040,21 +1036,21 @@ main {
     margin-top: 48px;
 }
 
-.div_img_info{
+.div_img_info {
     display: flex;
     flex-direction: column;
 }
 
-.img_teacher{
+.img_teacher {
     width: 210px;
     height: 315px;
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
 }
 
-.teacher_name{
+.teacher_name {
     width: 210px;
     height: 18px;
     font-family: Montserrat;
@@ -1063,11 +1059,11 @@ main {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    color: #493B08;
+    color: #493b08;
     margin-top: 23px;
 }
 
-.teacher_profil{
+.teacher_profil {
     width: 210px;
     height: 22px;
     font-family: Montserrat;
@@ -1077,11 +1073,11 @@ main {
     line-height: 22px;
     /* identical to box height */
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
     margin-top: 7px;
 }
 
-.teacher_staj{
+.teacher_staj {
     width: 210px;
     height: 17px;
     font-family: Montserrat;
@@ -1091,11 +1087,11 @@ main {
     line-height: 17px;
     /* identical to box height */
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
     margin-top: 3px;
 }
 
-.conteiner_faq{
+.conteiner_faq {
     max-width: 1320px;
     width: 100%;
     display: flex;
@@ -1104,7 +1100,7 @@ main {
     margin: 93px 0 auto 206px;
 }
 
-.title_text_faq{
+.title_text_faq {
     width: 790px;
     height: 66px;
     font-family: Montserrat;
@@ -1112,16 +1108,16 @@ main {
     font-weight: 700;
     font-size: 50px;
     line-height: 61px;
-    color: #2E2401;
+    color: #2e2401;
     margin-top: 5px;
 }
 
-.conteiner_faq_info{
+.conteiner_faq_info {
     display: flex;
     justify-content: space-between;
 }
 
-.block_text_faq{
+.block_text_faq {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -1130,7 +1126,11 @@ main {
     margin: 35px auto auto 0;
 }
 
-.text_faq{
+.block_text_faq_min{
+    display: none;
+}
+
+.text_faq {
     width: 473px;
     // height: 22px;
     font-family: Montserrat;
@@ -1139,11 +1139,11 @@ main {
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-    color: #100D00;
+    color: #100d00;
     // margin-bottom: 31px;
 }
 
-.faq_primary{
+.faq_primary {
     // width: 448px;
     height: 22px;
     font-family: Montserrat;
@@ -1153,10 +1153,10 @@ main {
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #716F69;
+    color: #716f69;
 }
 
-.faq_second{
+.faq_second {
     // height: 22px;
     font-family: Montserrat;
     font-style: normal;
@@ -1166,21 +1166,21 @@ main {
     /* identical to box height */
     display: flex;
     align-items: center;
-    color: #0B0800;
+    color: #0b0800;
     // margin-bottom: 30px;
 }
 
-.faq_info{
+.faq_info {
     display: flex;
     position: relative;
     margin: 99px 0 auto auto;
-    background: linear-gradient(90deg, #112E7C 8.8%, #497CE0 100%);
-    box-shadow: 0px 2px 3px #00040F;
+    background: linear-gradient(90deg, #112e7c 8.8%, #497ce0 100%);
+    box-shadow: 0px 2px 3px #00040f;
     width: 683px;
     height: 220px;
     // justify-content: center;
     align-items: center;
-    span{
+    span {
         width: 395px;
         height: 143px;
         font-family: Montserrat;
@@ -1189,22 +1189,22 @@ main {
         font-size: 15px;
         line-height: 190%;
         /* or 28px */
-        color: #F8F8FA;
+        color: #f8f8fa;
         margin-left: 95px;
     }
 }
 
-.rectangle_faq_absolut{
+.rectangle_faq_absolut {
     position: absolute;
     width: 60px;
     height: 150px;
     left: 30px;
     top: -42px;
-    background: #FFF500;
+    background: #fff500;
     // transform: rotate(-90deg);
 }
 
-.last_block_ura{
+.last_block_ura {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -1213,31 +1213,31 @@ main {
     margin-top: 56px;
     position: relative;
     margin-bottom: 79px;
-    &:before{
+    &:before {
         content: "";
-            position: absolute;
-            top: 1px;
-            left: 1px;
-            bottom: 1px;
-            right: 1px;
-            background: #FFFFFF;
-            z-index: -1;
-            border-radius: 5px;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        bottom: 1px;
+        right: 1px;
+        background: #ffffff;
+        z-index: -1;
+        border-radius: 5px;
     }
-    &:after{
-        content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background: linear-gradient(180deg, #FFC700 0%, #F3DB00 100%);
-            z-index: -2;
-            border-radius: 5px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(180deg, #ffc700 0%, #f3db00 100%);
+        z-index: -2;
+        border-radius: 5px;
     }
 }
 
-.voprosy{
+.voprosy {
     width: 349px;
     height: 34px;
     font-family: Montserrat;
@@ -1247,11 +1247,11 @@ main {
     line-height: 34px;
     text-align: center;
     text-transform: uppercase;
-    color: #2E2401;
+    color: #2e2401;
     margin-top: 20px;
 }
 
-.pishite{
+.pishite {
     width: 200px;
     height: 20px;
     font-family: Montserrat;
@@ -1260,28 +1260,28 @@ main {
     font-size: 15px;
     line-height: 18px;
     text-align: center;
-    color: #2E2401;
+    color: #2e2401;
     margin-top: 4px;
 }
 
-.contacts_last{
+.contacts_last {
     display: flex;
     flex-direction: column;
     margin: 33px 160px 47px 196px;
     width: 343px;
 }
 
-.phones{
+.phones {
     display: flex;
     justify-content: space-between;
     margin-bottom: 52px;
 }
 
-.phones_number{
+.phones_number {
     display: flex;
     flex-direction: column;
     margin-right: 17px;
-    span{
+    span {
         width: 197px;
         height: 31px;
         font-family: Montserrat;
@@ -1290,11 +1290,11 @@ main {
         font-size: 18px;
         line-height: 22px;
         text-align: left;
-        color: #2E2401;
+        color: #2e2401;
     }
 }
 
-.phone_text{
+.phone_text {
     width: 70px;
     height: 31px;
     font-family: Montserrat;
@@ -1302,17 +1302,16 @@ main {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
-    color: #2E2401;
+    color: #2e2401;
 }
 
-.contacts{
-
+.contacts {
 }
 
-.emails{
+.emails {
     display: flex;
     justify-content: space-between;
-    &:first-child{
+    &:first-child {
         // width: 74px;
         height: 23px;
         font-family: Montserrat;
@@ -1320,9 +1319,9 @@ main {
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
-        color: #2E2401;
+        color: #2e2401;
     }
-    .email{
+    .email {
         width: 214px;
         height: 23px;
         font-family: Montserrat;
@@ -1330,24 +1329,24 @@ main {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: #2E2401;
+        color: #2e2401;
     }
 }
 
-.telegrams{
+.telegrams {
     display: flex;
     justify-content: space-between;
     margin-top: 21px;
-    span{
+    span {
         height: 23px;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
-        color: #2E2401;
+        color: #2e2401;
     }
-    .telega{
+    .telega {
         width: 214px;
         height: 23px;
         font-family: Montserrat;
@@ -1355,36 +1354,36 @@ main {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-        color: #2E2401;
+        color: #2e2401;
     }
 }
 
 /*footer*/
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer_ection{
+.footer_ection {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(180deg, #082A85 0%, #082165 100%);
+    background: linear-gradient(180deg, #082a85 0%, #082165 100%);
 }
 
-.footer_main{
-    width: 100%;
+.footer_main {
+    // width: 100%;
     display: flex;
 }
 
-.footer_consult_block{
+.footer_consult_block {
     display: flex;
     flex-direction: column;
     width: 428px;
-    margin: 19px auto 21px 160px;
-    span{
+    margin: 19px auto 21px 208px;
+    span {
         width: 380px;
         height: 16px;
         font-family: Montserrat;
@@ -1394,17 +1393,17 @@ footer{
         line-height: 16px;
         /* identical to box height */
         text-transform: uppercase;
-        color: #DEE4EE;
-        margin-left: 48px;
+        color: #dee4ee;
+        // margin-left: 48px;
         margin-bottom: 24px;
     }
-    form{
+    form {
         display: flex;
         flex-direction: column;
-        input[type="text"]{
+        input[type="text"] {
             width: 255px;
             height: 35px;
-            background: #FCFBF7;
+            background: #fcfbf7;
             border-radius: 5px;
             border: none;
             font-family: Montserrat;
@@ -1414,15 +1413,15 @@ footer{
             line-height: 17px;
             text-align: center;
             // color: #D0D0D0;
-            margin: 0 auto 12px 48px;
+            margin: 0 auto 12px 0;
         }
-        #phone_footer{
+        #phone_footer {
             text-transform: uppercase;
         }
-        button{
+        button {
             width: 255px;
             height: 42.95px;
-            background: linear-gradient(180deg, #5194F6 0%, #0757CD 100%);
+            background: linear-gradient(180deg, #5194f6 0%, #0757cd 100%);
             border: none;
             border-radius: 10px;
             margin: 9px auto 21px 0;
@@ -1433,36 +1432,40 @@ footer{
             line-height: 18px;
             text-align: center;
             letter-spacing: 0.015em;
-            color: #FFFFFF;
-            &:hover{
-                background: linear-gradient(180deg, #77AEFF 0%, #3F8CFF 100%);
+            color: #ffffff;
+            &:hover {
+                background: linear-gradient(180deg, #77aeff 0%, #3f8cff 100%);
             }
-            &:active{
-                background: linear-gradient(180deg, #1556B7 0%, #0757CD 100%);
+            &:active {
+                background: linear-gradient(180deg, #1556b7 0%, #0757cd 100%);
             }
-            
         }
     }
 }
 
-.footer_logo{
+.footer_logo {
     width: 78px;
     height: 30px;
-    margin: 0 auto 0 48px;
+    // margin: 0 auto 0 48px;
 }
 
-.footer_info_block{
+.footer_logo_min{
+    display: none;
+}
+
+.footer_info_block {
     display: flex;
     justify-content: space-between;
     margin: 59px auto 68px 0;
     width: 410px;
 }
 
-.info_column, .info_column_2{
+.info_column,
+.info_column_2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    a{
+    a {
         width: 125px;
         height: 15px;
         font-family: Montserrat;
@@ -1470,25 +1473,25 @@ footer{
         font-weight: normal;
         font-size: 13px;
         line-height: 16px;
-        color: #DEE4EE;
+        color: #dee4ee;
     }
 }
 
-.info_column_2{
-    a{
+.info_column_2 {
+    a {
         width: 190px;
         height: 15px;
     }
 }
 
-.footer_contacts{
+.footer_contacts {
     width: 185px;
     display: flex;
     flex-direction: column;
     margin: auto 208px 17px auto;
 }
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
@@ -1496,22 +1499,22 @@ footer{
     margin-bottom: 22px;
 }
 
-.icon{
+.icon {
     width: 28px;
     height: 27px;
-    img{
+    img {
         width: 100%;
         height: 100%;
     }
 }
 
-.location_footer{
+.location_footer {
     display: flex;
     flex-direction: column;
     // justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 24px;
-    span{
+    span {
         width: 185px;
         height: 21px;
         font-family: Montserrat;
@@ -1520,9 +1523,9 @@ footer{
         font-size: 13px;
         line-height: 16px;
         text-align: right;
-        color: #DEE4EE;
+        color: #dee4ee;
     }
-    a{
+    a {
         width: 162px;
         height: 15px;
         font-family: Montserrat;
@@ -1532,18 +1535,18 @@ footer{
         line-height: 13px;
         text-align: right;
         text-decoration-line: underline;
-        color: #DEE4EE;
+        color: #dee4ee;
         margin-top: 2px;
     }
 }
 
-.numbers{
+.numbers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     height: 42px;
-    span{
+    span {
         width: 160px;
         height: 20px;
         font-family: Montserrat;
@@ -1552,16 +1555,16 @@ footer{
         font-size: 13px;
         line-height: 16px;
         text-align: right;
-        color: #DEE4EE;
+        color: #dee4ee;
     }
 }
 
-.footer_last_block{
+.footer_last_block {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #01094E;
-    span{
+    background: #01094e;
+    span {
         width: 410px;
         height: 18px;
         font-family: Montserrat;
@@ -1570,45 +1573,53 @@ footer{
         font-size: 14px;
         line-height: 17px;
         text-align: center;
-        color: #F4F6FD;
+        color: #f4f6fd;
         margin: 7px auto 8px auto;
     }
 }
 
-/*Адаптив, не иди чтото на него похожее*/
+/*Адаптив, ну или чтото на него похожее*/
 
-@media only screen and (min-width: 992px) and (max-width: 1140px){
-    .head{
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .head {
         max-width: 945px;
         position: relative;
+        margin: 6px auto;
     }
-    
-    .entry{
+
+    .entry {
         order: 1;
         margin-left: 129px;
         margin-right: 0;
     }
 
-    .logo{
+    .logo {
         width: 98px;
         height: 39px;
         margin-right: 157px;
     }
 
-    .contact{
+    .entry {
+        width: 80px;
+        height: 23px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .contact {
         position: absolute;
         top: 63px;
         right: 7px;
         z-index: 2;
         flex-direction: column;
         align-items: flex-end;
-        div{
-            &:first-child{
+        div {
+            &:first-child {
                 width: 204px;
                 align-items: flex-end;
                 margin-right: 0;
                 margin-bottom: 5px;
-                span{
+                span {
                     height: 20px;
                     font-family: Montserrat;
                     font-style: normal;
@@ -1619,10 +1630,10 @@ footer{
                     color: #393400;
                 }
             }
-            &:last-child{
+            &:last-child {
                 width: 163px;
                 align-items: flex-end;
-                span{
+                span {
                     height: 17px;
                     font-family: Montserrat;
                     font-style: normal;
@@ -1631,33 +1642,31 @@ footer{
                     line-height: 18px;
                     text-align: right;
                     letter-spacing: 0.005em;
-                    color: #FFF6D5;
+                    color: #fff6d5;
                 }
-                
             }
         }
-        
     }
 
-    nav{
+    nav {
         max-width: 481px;
     }
 
     /*main*/
 
-    .content_title{
+    .content_title {
         height: auto;
     }
 
-    .container{
+    .container {
         max-width: 931px;
     }
 
-    .content_name{
+    .content_name {
         font-size: 80px;
     }
 
-    .text{
+    .text {
         margin: 29px auto 0 0;
     }
 
@@ -1671,12 +1680,12 @@ footer{
         }
     }
 
-    .text_2{
+    .text_2 {
         margin-top: 43px;
         margin-bottom: 22px;
     }
 
-    #button_curs{
+    #button_curs {
         width: 270px;
         height: 55px;
         font-size: 18px;
@@ -1684,20 +1693,20 @@ footer{
         margin-top: 0;
         margin-bottom: 50px;
     }
-    
-    .adres{
+
+    .adres {
         margin-bottom: 31px;
-        span{
-            color: #5F4E15;
+        span {
+            color: #5f4e15;
         }
-        div{
+        div {
             position: absolute;
             top: 99px;
             right: 0;
         }
     }
 
-    .main_icon{
+    .main_icon {
         width: 350px;
         height: 280px;
         top: 400px;
@@ -1707,38 +1716,42 @@ footer{
 
     /*Блок с кнопкой*/
 
-    .test_button_test{
+    .test_button_test {
+        font-size: 22px;
+    }
+
+    #test {
         font-size: 22px;
     }
 
     /*Блок в правильным выбором*/
 
-    .itec{
+    .itec {
         margin: 21px auto 71px auto;
         max-width: 930px;
     }
 
-    .rectangle{
+    .rectangle {
         display: none;
     }
 
-    .itec_title{
+    .itec_title {
         font-size: 50px;
         width: 851px;
         height: 67px;
     }
 
-    .left_title{
+    .left_title {
         width: 640px;
         margin: 21px 0 0 0;
     }
 
-    .right_title{
+    .right_title {
         width: 480px;
         margin: 50px 0 0 0;
     }
 
-    .itec_img{
+    .itec_img {
         margin: 28px auto 23px 120px;
         width: 200px;
         height: 200px;
@@ -1746,53 +1759,55 @@ footer{
 
     /*Блок про три формы обучения*/
 
-    .rectangle_white{
+    .rectangle_white {
         display: none;
     }
 
-    .format_title{
+    .format_title {
         width: 770px;
         height: 57px;
         font-size: 40px;
         line-height: 49px;
         margin-top: 29px;
         margin-bottom: 5px;
-    }    
+    }
 
-    .format_text{
+    .format_text {
         width: 299px;
         height: 29px;
     }
 
-    .format_type{
+    .format_type {
         max-width: 810px;
-        div{
-            span{
+        div {
+            span {
                 width: 162px;
                 margin-top: 18.5px;
             }
         }
     }
 
-    .format_type_img{
+    .format_type_img {
         width: 162px;
         height: 165px;
-        img{
+        img {
             width: 40px;
             height: 42px;
             margin: 33px auto 0 auto;
         }
     }
 
-    .format_type_img_span{
+    .format_type_img_span {
         margin-bottom: 41px;
         margin-top: 17.5px;
     }
 
-    .vibor{
+    /*Блок про выбор ITEC*/
+
+    .vibor {
         max-width: 620px;
         margin: 86px 0 98px 0;
-        span{
+        span {
             width: 620px;
             height: 46px;
             margin-bottom: 54px;
@@ -1800,96 +1815,104 @@ footer{
         }
     }
 
-    .left_block, .rigth_block {
+    .left_block,
+    .rigth_block {
         height: 352px;
-        div{
+        div {
             span {
                 width: 235px;
                 height: 49px;
                 text-transform: none;
             }
-            .span_bot{
+            .span_bot {
                 height: 21px;
                 margin-top: 23px;
             }
         }
     }
 
-    .fon{
-        .line{
+    .fon {
+        .line {
             display: none;
         }
     }
 
-    .dostup{
+    .dostup {
         width: 82px;
         height: 82px;
     }
 
-    .oplata{
+    .oplata {
         width: 74;
         height: 82px;
     }
 
-    .mosk{
+    .mosk {
         width: 65px;
         height: 82px;
     }
 
-    .bonus{
+    .bonus {
         width: 82px;
         height: 82px;
         margin-bottom: 1px;
     }
 
-    .container_put{
+    /*Скрытый блок*/
+
+    .container_put {
         display: none;
     }
 
-    .conteiner_nht_cours{
+    /*Ближайшие курсы*/
+
+    .conteiner_nht_cours {
         max-width: 840px;
     }
 
-    .nth_cours{
+    .nth_cours {
         font-weight: bold;
         font-size: 40px;
         line-height: 49px;
     }
 
-    .cours_type{
+    .cours_type {
         margin: 42px 0 55px 0;
-        .nth_cours_block{
+        .nth_cours_block {
             width: 245px;
             height: 307px;
         }
     }
 
-    .nth_cours_name{
+    .nth_cours_name {
         width: 245px;
-        height: 35px;
+        height: 69px;
         font-size: 27px;
         line-height: 36px;
-        top: 80px;
-
+        top: 63px;
     }
 
-    .all_cours{
+    .nth_cours_name_min {
         display: none;
     }
 
-    .all_cours_hide{
+    .all_cours {
+        display: none;
+    }
+
+    .all_cours_hide {
         display: block;
     }
 
-    .cours_type{
-        .nth_cours_block{
-            span{
+    .cours_type {
+        .nth_cours_block {
+            span {
                 font-size: 17px;
                 line-height: 21px;
                 letter-spacing: 0.05em;
                 margin: 44.65px auto;
             }
-            .nth_cours_img{
+            .nth_cours_img {
                 width: 114.6px;
                 height: 146.52px;
                 margin-top: 48.84px;
@@ -1897,69 +1920,32 @@ footer{
         }
     }
 
-    .desc{
+    .desc {
         display: none;
     }
 
-    .diplon_conteiner{
-        max-width: 897px;
-        margin: 76px 0 95px 0;
-    }
+    
 
-    .diplom_project{
-        align-self: baseline;
-        width: 720px;
-        height: 112px;
-        font-weight: bold;
-        font-size: 45px;
-        line-height: 55px;
-    }
+    // .slider_main{
+    //     width: 100%;
+    // }
 
-    .diplom_info{
-        margin: 5px 0 0 0;
-    }
-
-    .diplom_img{
+    .conteiner_help {
         display: none;
     }
 
-    .slider{
-        margin-left: 31px;
-        height: 433px;
-    }
-
-    .prev{
-        width: 24px;
-        height: 33px;
-        margin: 258px 50px auto 0;
-    }
-
-    .next{
-        width: 35px;
-        height: 48px;
-        margin: 251px 0 auto 37px;
-    }
-
-    .slider_main{
-        width: 100%;
-    }
-
-    .conteiner_help{
-        display: none;
-    }
-
-    .conteiner_teacher{
+    .conteiner_teacher {
         max-width: 905px;
         margin: 0 72px 0 47px;
     }
 
-    .text_title_teacher{
+    .text_title_teacher {
         font-size: 40px;
         line-height: 49px;
         letter-spacing: 0.02em;
     }
 
-    .text_teacher{
+    .text_teacher {
         width: 560px;
         height: 128px;
         font-size: 18px;
@@ -1967,48 +1953,48 @@ footer{
         margin-top: 25px;
     }
 
-    .teacher_img_conteiner{
+    .teacher_img_conteiner {
         margin-top: 52px;
     }
 
-    .img_teacher{
+    .img_teacher {
         width: 200px;
         height: 300px;
     }
-    
-    .teacher_profil{
+
+    .teacher_profil {
         margin-top: 5px;
     }
 
-    .teacher_staj{
+    .teacher_staj {
         margin-top: 5px;
     }
 
-    .conteiner_faq{
+    .conteiner_faq {
         max-width: 977px;
         margin: 64px 0 auto 47px;
         margin-bottom: 51px;
     }
 
-    .text_faq{
+    .text_faq {
         width: 450px;
         font-size: 20px;
         line-height: 26px;
-        color: #2E2401;
+        color: #2e2401;
     }
 
-    .faq_primary{
-        color: #716F69;
+    .faq_primary {
+        color: #716f69;
     }
 
-    .faq_second{
+    .faq_second {
         font-weight: normal;
     }
 
-    .faq_info{
+    .faq_info {
         max-width: 497px;
         height: 229px;
-        span{
+        span {
             width: 397px;
             height: 197px;
             margin-left: 68px;
@@ -2017,7 +2003,7 @@ footer{
         }
     }
 
-    .rectangle_faq_absolut{
+    .rectangle_faq_absolut {
         width: 25px;
         height: 85px;
         left: 25px;
@@ -2026,41 +2012,39 @@ footer{
 
     /*Место для кучи стилей*/
 
-    .last_block_ura{
+    .last_block_ura {
         display: none;
     }
 
     /*Футер*/
 
-    .footer_ection{
-
+    .footer_ection {
     }
 
-    .footer_main{
+    .footer_main {
         max-width: 930px;
         flex-wrap: wrap;
     }
 
-    .footer_consult_block{
+    .footer_consult_block {
         margin: 27px auto auto 0;
         max-height: 260px;
-        span{
+        span {
             margin-left: 0;
             width: 361px;
             height: 16px;
-
         }
-        form{
+        form {
             height: 153px;
 
-            input[type="text"]{
+            input[type="text"] {
                 width: 290px;
                 height: 42px;
                 font-size: 17px;
                 line-height: 21px;
                 margin: auto auto 11px 0;
             }
-            button{
+            button {
                 width: 290px;
                 height: 44px;
                 margin: 3px auto 0 0;
@@ -2068,97 +2052,98 @@ footer{
         }
     }
 
-    .footer_logo{
+    .footer_logo {
         width: 127px;
         height: 47px;
         margin: 20px auto 0 0;
     }
 
-    .footer_info_block{
+    .footer_info_block {
         height: 230px;
         max-width: 480px;
         width: 100%;
         margin: 67px 0 auto auto;
     }
 
-    .info_column{
+    .info_column {
         width: 180px;
         height: 206px;
-        a{
+        a {
             width: 180px;
         }
     }
 
-    .info_column_2{
-        a{
+    .info_column_2 {
+        a {
             width: 240px;
         }
     }
 
-    .info_column a, .info_column_2 a{
+    .info_column a,
+    .info_column_2 a {
         font-size: 17px;
         line-height: 21px;
     }
 
-    .footer_contacts{
+    .footer_contacts {
         margin-left: 0;
         margin-top: 20.8px;
         margin-bottom: auto;
         width: auto;
     }
 
-    .icons{
+    .icons {
         align-self: baseline;
         width: 118px;
         margin-bottom: 14.52px;
     }
 
-    .icon{
+    .icon {
         width: 29.54px;
         height: 28.48px;
     }
 
-    .wrapper_footer{
+    .wrapper_footer {
         display: flex;
         justify-content: space-between;
     }
 
-    .location_footer{
+    .location_footer {
         align-items: baseline;
         width: 235px;
         margin-right: 5px;
         margin-bottom: 10px;
-        span{
+        span {
             text-align: left;
             font-weight: normal;
             font-size: 14px;
             line-height: 17px;
-            color: #DEE4EE;
+            color: #dee4ee;
         }
-        a{
+        a {
             text-align: left;
             font-weight: 300;
             font-size: 12px;
             line-height: 15px;
-            color: #DEE4EE;
+            color: #dee4ee;
         }
     }
 
-    .numbers{
+    .numbers {
         align-items: baseline;
-        span{
+        span {
             width: 135px;
             height: 16px;
             font-weight: 500;
             font-size: 14px;
             line-height: 17px;
             letter-spacing: 0.005em;
-            color: #DEE4EE;
+            color: #dee4ee;
             text-align: left;
         }
     }
 
-    .footer_last_block{
+    .footer_last_block {
         font-size: 13px;
     }
 }

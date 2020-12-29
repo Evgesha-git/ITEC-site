@@ -1,0 +1,688 @@
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .head{
+        max-width: 720px;
+        position: relative;
+        margin: 4px auto 3.37px auto;
+    }
+
+    .entry{
+        order: 1;
+        margin-left: 56px;
+        margin-right: 0;
+    }
+
+    .logo{
+        width: 82px;
+        height: 33px;
+        margin-right: 54px;
+    }
+
+    .contact{
+        position: absolute;
+        top: 40px;
+        right: 15px;
+        z-index: 2;
+        flex-direction: column;
+        align-items: flex-end;
+        div{
+            &:first-child{
+                width: 204px;
+                align-items: flex-end;
+                margin-right: 0;
+                margin-bottom: 5px;
+                span{
+                    height: 20px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-align: right;
+                    color: #393400;
+                }
+            }
+            &:last-child{
+                width: 163px;
+                align-items: flex-end;
+                span{
+                    height: 17px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 18px;
+                    text-align: right;
+                    letter-spacing: 0.005em;
+                    color: #FFF6D5;
+                }
+                
+            }
+        } 
+    }
+
+    nav{
+        max-width: 448px;
+    }
+
+    #menu{
+        li{
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+
+    .entry{
+        width: 80px;
+        height: 23px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    /*main*/
+
+    .content_title{
+        height: auto;
+    }
+
+    .container{
+        max-width: 690px;
+    }
+
+    .content_name{
+        height: 177px;
+        margin: 49px auto 0 0;
+        font-size: 60px;
+        line-height: 97.4%;
+        display: flex;
+        align-items: center;
+    }
+
+    .text{
+        width: 287px;
+        height: 45px;
+        margin: 8px auto 7px 0;
+        font-size: 17px;
+    }
+
+    .cours {
+        margin-top: 0;
+        max-width: 644px;
+        ul {
+            li {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .text_2{
+        margin-top: 31px;
+        margin-bottom: 19px;
+
+    }
+
+    #button_curs{
+        width: 270px;
+        height: 55px;
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .adres{
+        margin-bottom: 20px;
+        span{
+            color: #5F4E15;
+        }
+        div{
+            position: absolute;
+            top: 91px;
+            right: 0;
+        }
+    }
+
+    .main_icon{
+        width: 262px;
+        height: 209.6px;
+        top: 376px;
+        right: 0;
+        left: auto;
+    }
+
+    /*Блок с кнопкой*/
+
+    .test {
+        margin: 76px auto 55px auto;
+        div {
+            span:first-child {
+                max-width: 700px;
+                width: 100%;
+                height: 56px;
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 33px;
+            }
+            span:last-child {
+                max-width: 700px;
+                width: 100%;
+            }
+        }
+    }
+
+    .test_button_test{
+        margin: 20px auto 56px auto;
+    }
+
+    #test{
+        font-size: 20px;
+        width: 249px;
+        height: 48px;
+    }
+
+    /*Блок в правильным выбором*/
+
+    .itec{
+        margin: 0 auto 71px auto;
+        max-width: 690px;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .itec_title{
+        font-size: 40px;
+        width: 600px;
+        height: 51px;
+    }
+
+    .left_title{
+        width: 485px;
+        margin: 15px auto 2px 0;
+    }
+
+    .right_title{
+        width: 390px;
+        margin: 0 0 0 auto;
+    }
+
+    .itec_img{
+        margin: 34px auto 32px 30px;
+        width: 200px;
+        height: 195px;
+    }
+
+    /*Блок про три формы обучения*/
+
+    .content_format{
+        height: auto;
+    }
+
+    .rectangle_white{
+        display: none;
+    }
+
+    .format_title{
+        width: 580px;
+        height: 44px;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        margin-top: 21px;
+        margin-bottom: 7px;
+        span:last-child{
+            display: none;
+        }
+    }    
+
+    .format_text{
+        width: 294px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .format_type{
+        max-width: 604px;
+        margin-bottom: 66px;
+        div{
+            margin-top: 0;
+            span{
+                width: 183.87px;
+                margin-top: 11.27px;
+            }
+            .format_type_img_span{
+                margin-bottom: 31.33px;
+                margin-top: 15.57px;
+                font-size: 18px;
+                line-height: 22px;
+                width: 122.58px;
+            }
+        }
+    }
+
+    .format_type_img{
+        width: 122.58px;
+        height: 126.73px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin: 25.63px auto 0 auto;
+        }
+    }
+
+    /*Блок про выбор ITEC*/
+
+    .vibor{
+        max-width: 542px;
+        margin: 52px auto 64px auto;
+        span{
+            width: 526px;
+            height: 46px;
+            margin-bottom: 49px;
+            text-transform: none;
+            font-size: 35px;
+            line-height: 43px;
+        }
+    }
+
+    .left_block, .rigth_block {
+        height: 352px;
+        div{
+            span {
+                width: 235px;
+                height: 49px;
+                text-transform: none;
+            }
+            .span_bot{
+                height: 21px;
+                margin-top: 23px;
+            }
+        }
+    }
+
+    .fon{
+        .line{
+            display: none;
+        }
+    }
+
+    .dostup{
+        width: 82px;
+        height: 82px;
+    }
+
+    .oplata{
+        width: 74;
+        height: 82px;
+    }
+
+    .mosk{
+        width: 65px;
+        height: 82px;
+    }
+
+    .bonus{
+        width: 82px;
+        height: 82px;
+        margin-bottom: 1px;
+    }
+
+    /*Скрытый блок*/
+
+    .container_put{
+        display: none;
+    }
+
+    /*Ближайшие курсы*/
+
+    .conteiner_nht_cours{
+        max-width: 690px;
+    }
+
+    .nth_cours{
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 43px;
+    }
+
+    .cours_type{
+        margin: 35px 0 39px 0;
+        justify-content: space-between;
+        .nth_cours_block{
+            width: 214.41px;
+            height: 273px;
+        }
+    }
+
+    .nth_cours_name{
+        display: none;
+
+    }
+
+    .nth_cours_name_min{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 68px;
+        font-size: 20px;
+        line-height: 32px;
+        top: 67.7px;
+        font-family: Gadugi Arial;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        z-index: 1;
+    }
+
+    .all_cours{
+        display: none;
+    }
+
+    .all_cours_hide{
+        display: block;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .cours_type{
+        .nth_cours_block{
+            span{
+                font-size: 17px;
+                line-height: 21px;
+                letter-spacing: 0.05em;
+                // margin: 44.65px auto;
+            }
+            .nth_cours_img{
+                width: 114.6px;
+                height: 146.52px;
+                // margin-top: 48.84px;
+            }
+        }
+    }
+
+    .desc{
+        display: none;
+    }
+
+    /*Блок со слайдером*/
+
+
+
+    // .slider_main{
+    //     width: 470px;
+    // }
+
+    /*Контейнер с аисистом в выборе*/
+
+    .conteiner_help{
+        display: none;
+    }
+
+    /*Преподаватели*/
+
+    .conteiner_teacher{
+        min-width: 600px;
+        margin: 0 129px 0 39px;
+    }
+
+    .text_title_teacher{
+        width: 450px;
+        height: 39px;
+        font-size: 35px;
+        line-height: 43px;
+        letter-spacing: 0.02em;
+    }
+
+    .text_teacher{
+        width: 480px;
+        // height: 39px;
+        font-size: 16px;
+        line-height: 180%;
+        margin-top: 20px;
+    }
+
+    .teacher_img_conteiner{
+        width: 510px;
+        margin-top: 25px;
+    }
+
+    .img_teacher{
+        width: 110px;
+        height: 150px;
+        align-self: center;
+    }
+    
+    .teacher_name{
+        align-self: center;
+        width: 150px;
+        height: 14px;
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 16px;
+    }
+
+    .teacher_profil{
+        align-self: center;
+        width: 150px;
+        height: 16px;
+        font-family: Roboto;
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 5px;
+    }
+
+    .teacher_staj{
+        align-self: center;
+        width: 150px;
+        height: 12px;
+        font-family: Roboto;
+        font-size: 13px;
+        line-height: 15px;
+        margin-top: 5px;
+        margin-top: 5px;
+    }
+
+    /*блок с факам*/
+
+    .conteiner_faq{
+        min-width: 729px;
+        margin: 60px 0 auto 39px;
+        // margin-bottom: 51px;
+    }
+
+    .title_text_faq{
+        width: 550px;
+        height: 48px;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 43px;
+        color: #2E2401;
+        margin-top: 0;
+    }
+
+    .block_text_faq{
+        max-width: 336px;
+        height: 356px;
+        margin: 24px auto auto 0;
+    }
+
+    .text_faq{
+        width: 336px;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 21px;
+        color: #2E2401;
+    }
+
+    .faq_primary{
+        color: #716F69;
+    }
+
+    .faq_second{
+        font-weight: normal;
+    }
+
+    .faq_info{
+        max-width: 381px;
+        height: 215px;
+        margin: 90px 0 auto auto;
+        span{
+            width: 306px;
+            height: 183px;
+            margin-left: 51px;
+            font-size: 14px;
+            line-height: 180%;
+        }
+    }
+
+    .rectangle_faq_absolut{
+        width: 25px;
+        height: 85px;
+        left: 17px;
+        top: -25px;
+    }
+
+    /*Место для кучи стилей*/
+
+    .last_block_ura{
+        display: none;
+    }
+
+    /*футер*/
+
+    .footer_main{
+        max-width: 690px;
+        flex-wrap: wrap;
+    }
+
+    .footer_consult_block{
+        margin: 23px auto auto 0;
+        height: 303.2px;
+        width: 300px;
+        span{
+            margin-left: 0;
+            width: 300px;
+            height: 40px;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 23px;
+        }
+        form{
+            height: 139px;
+
+            input[type="text"]{
+                width: 240px;
+                height: 35px;
+                font-size: 13px;
+                line-height: 16px;
+                margin: auto auto 11px 0;
+            }
+            button{
+                width: 240px;
+                height: 44px;
+                margin: 3px auto 0 0;
+            }
+        }
+    }
+
+    .footer_logo{
+        width: 127px;
+        height: 47.2px;
+        margin: 54px auto 0 0;
+    }
+
+    .footer_info_block{
+        height: 248px;
+        max-width: 360px;
+        width: 100%;
+        margin: 86px 0 auto auto;
+    }
+
+    .info_column{
+        width: 180px;
+        height: 206px;
+        a{
+            width: 180px;
+        }
+    }
+
+    .info_column_2{
+        a{
+            width: 180px;
+        }
+    }
+
+    .info_column a, .info_column_2 a{
+        height: 26px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    .footer_contacts{
+        margin-left: 0;
+        margin-top: 20.8px;
+        margin-bottom: auto;
+        width: auto;
+    }
+
+    .icons{
+        align-self: baseline;
+        width: 118px;
+        margin-bottom: 25.52px;
+    }
+
+    .icon{
+        width: 29.54px;
+        height: 28.48px;
+    }
+
+    .wrapper_footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .location_footer{
+        align-items: baseline;
+        width: 235px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        span{
+            text-align: left;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #DEE4EE;
+        }
+        a{
+            text-align: left;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 15px;
+            color: #DEE4EE;
+        }
+    }
+
+    .numbers{
+        align-items: baseline;
+        span{
+            width: 133px;
+            height: 16px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.005em;
+            color: #DEE4EE;
+            text-align: left;
+        }
+    }
+
+    .footer_last_block{
+        font-size: 13px;
+    }
+}

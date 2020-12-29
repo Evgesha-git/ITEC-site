@@ -1,0 +1,692 @@
+.diplom_conteiner {
+  margin: 57px auto 62px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  position: relative;
+}
+
+.diplom_project {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 61px;
+  /* identical to box height */
+  color: #2e2401;
+  width: 1106px;
+  height: 61px;
+}
+
+.diplom_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 138px auto 9px 0;
+}
+
+.diplom_img {
+  width: 200px;
+  height: 185px;
+  margin: 21px auto 0 auto;
+}
+
+.slider {
+  width: 857.61px;
+  height: 433px;
+  margin-left: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider div {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.prev {
+  width: 26px;
+  height: 33px;
+  background: url(../img/slider/Vector.svg) no-repeat;
+  margin: 234px 2px 237px 0;
+  z-index: 1000;
+}
+
+.prev:hover {
+  background: url(../img/slider/Vector_hov.svg) no-repeat;
+}
+
+.next {
+  width: 40px;
+  height: 48px;
+  background: url(../img/slider/Vector_next.svg) no-repeat;
+  margin: 227px 48px 228px 0;
+  z-index: 1000;
+}
+
+.next:hover {
+  background: url(../img/slider/Vector_next_hov.svg) no-repeat;
+}
+
+.slider_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 710px;
+  height: 433px;
+  overflow: hidden;
+}
+
+.slide_none {
+  display: none;
+}
+
+.opacity {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2F8FF), to(#CCE0F8));
+  background: linear-gradient(180deg, #F2F8FF 0%, #CCE0F8 100%);
+  z-index: -9999;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.slide_element {
+  position: absolute;
+  bottom: -70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 175px;
+  height: 328px;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.slide_element .slide_img {
+  width: 175px;
+  height: 250px;
+  -webkit-box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.slide_element .slide_img:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background: #F4F8FE;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.slide_element .slide_img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8F97DC), to(#09168C));
+  background: linear-gradient(180deg, #8F97DC 0%, #09168C 100%);
+  z-index: -2;
+  border-radius: 5px;
+}
+
+.slide_element .student {
+  width: 175px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: #2E2401;
+}
+
+.slide_element .student_name {
+  width: 175px;
+  height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(46, 36, 1, 0.5);
+}
+
+.slide_element .teacher_slide {
+  width: 175px;
+  height: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: rgba(46, 36, 1, 0.7);
+}
+
+.slide_element .teacher_slide_name {
+  width: 175px;
+  height: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #2E2401;
+}
+
+.prev_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 175px;
+  height: 328px;
+  bottom: 0px;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.main_slide {
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 274px;
+  height: 433px;
+  bottom: 0px;
+  margin: auto 43px 0 43px;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.main_slide .slide_img {
+  width: 200px;
+  height: 280px;
+  -webkit-box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 19px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+.main_slide .slide_img {
+  width: 175px;
+  height: 250px;
+}
+
+.main_slide .student {
+  width: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #2E2401;
+}
+
+.main_slide .student_name {
+  width: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: rgba(46, 36, 1, 0.5);
+}
+
+.main_slide .teacher_slide {
+  width: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(46, 36, 1, 0.7);
+}
+
+.main_slide .teacher_slide_name {
+  width: 200px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #2E2401;
+}
+
+.next_slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 175px;
+  height: 328px;
+  bottom: 0px;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+  .diplom_conteiner {
+    max-width: 897px;
+    margin: 76px 0 95px 0;
+  }
+  .diplom_project {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    width: 720px;
+    height: 112px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .diplom_info {
+    margin: 5px 0 0 0;
+  }
+  .diplom_img {
+    display: none;
+  }
+  .slider {
+    margin-left: 31px;
+    height: 433px;
+    width: 866px;
+  }
+  .prev {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 24px;
+    height: 33px;
+    margin: 258px 49.97px auto 0;
+  }
+  .next {
+    width: 35.04px;
+    height: 48.12px;
+    margin: 251px 0 auto 36.96px;
+  }
+  .slider_main {
+    width: 720px;
+    height: 444px;
+  }
+  .slide_element {
+    width: 180px;
+    height: 318px;
+  }
+  .slide_element .slide_img {
+    width: 180px;
+    height: 250px;
+  }
+  .slide_element .student {
+    width: 180px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .slide_element .student_name {
+    width: 100%;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .slide_element .teacher_slide {
+    opacity: 0;
+  }
+  .slide_element .teacher_slide_name {
+    opacity: 0;
+  }
+  .prev_slide, .next_slide {
+    width: 180px;
+    height: 318px;
+  }
+  .prev_slide .teacher_slide, .next_slide .teacher_slide {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .prev_slide .teacher_slide_name, .next_slide .teacher_slide_name {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .main_slide {
+    width: 274px;
+    height: 433px;
+    margin-bottom: 11px;
+  }
+  .main_slide .slide_img {
+    width: 201.6px;
+    height: 280px;
+  }
+  .main_slide .student {
+    width: 180px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main_slide .student_name {
+    width: 180px;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main_slide .teacher_slide {
+    opacity: 1;
+    width: 180px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main_slide .teacher_slide_name {
+    opacity: 1;
+    width: 180px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .diplom_conteiner {
+    min-width: 614px;
+    margin: 40px 114px 57px 39px;
+  }
+  .diplom_project {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    width: 410px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .diplom_info {
+    margin: 30px 0 0 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .diplom_img {
+    display: none;
+  }
+  .slider {
+    margin-left: 0px;
+    width: 538px;
+    height: 316px;
+  }
+  .prev {
+    background-size: cover;
+    width: 10px;
+    height: 15px;
+    margin: 0 22.34px 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .prev:hover {
+    background-size: cover;
+  }
+  .next {
+    background-size: cover;
+    width: 17px;
+    height: 25px;
+    margin: 0 0 0 27px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .next:hover {
+    background-size: cover;
+  }
+  .slider_main {
+    width: 470px;
+    height: 316px;
+  }
+  .slide_element {
+    width: 116px;
+    height: 216.5px;
+  }
+  .slide_element .slide_img {
+    width: 100px;
+    height: 138px;
+  }
+  .slide_element .student {
+    width: 116px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .slide_element .student_name {
+    width: 100%;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .slide_element .teacher_slide {
+    opacity: 0;
+  }
+  .slide_element .teacher_slide_name {
+    opacity: 0;
+  }
+  .prev_slide, .next_slide {
+    width: 116px;
+    height: 216.5px;
+    margin-bottom: 18px;
+  }
+  .prev_slide .teacher_slide, .next_slide .teacher_slide {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .prev_slide .teacher_slide_name, .next_slide .teacher_slide_name {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .main_slide {
+    width: 177px;
+    height: 316px;
+    margin: auto 24px 0 24px;
+  }
+  .main_slide .slide_img {
+    width: 130.4px;
+    height: 181.11px;
+  }
+  .main_slide .student {
+    width: 164px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .main_slide .student_name {
+    width: 150px;
+  }
+  .main_slide .teacher_slide {
+    opacity: 1;
+    width: 150px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main_slide .teacher_slide_name {
+    opacity: 1;
+    width: 150px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .diplom_conteiner {
+    min-width: 614px;
+    margin: 40px 114px 57px 39px;
+  }
+  .diplom_project {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    width: 410px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 43px;
+  }
+  .diplom_info {
+    margin: 30px 0 0 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .diplom_img {
+    display: none;
+  }
+  .slider {
+    margin-left: 0px;
+    width: 538px;
+    height: 316px;
+  }
+  .prev {
+    background-size: cover;
+    width: 10px;
+    height: 15px;
+    margin: 0 22.34px 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .prev:hover {
+    background-size: cover;
+  }
+  .next {
+    background-size: cover;
+    width: 17px;
+    height: 25px;
+    margin: 0 0 0 27px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .next:hover {
+    background-size: cover;
+  }
+  .slider_main {
+    width: 470px;
+    height: 316px;
+  }
+  .slide_element {
+    width: 116px;
+    height: 216.5px;
+  }
+  .slide_element .slide_img {
+    width: 100px;
+    height: 138px;
+  }
+  .slide_element .student {
+    width: 116px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .slide_element .student_name {
+    width: 100%;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .slide_element .teacher_slide {
+    opacity: 0;
+  }
+  .slide_element .teacher_slide_name {
+    opacity: 0;
+  }
+  .prev_slide, .next_slide {
+    width: 116px;
+    height: 216.5px;
+    margin-bottom: 18px;
+  }
+  .prev_slide .teacher_slide, .next_slide .teacher_slide {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .prev_slide .teacher_slide_name, .next_slide .teacher_slide_name {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .main_slide {
+    width: 177px;
+    height: 316px;
+    margin: auto 24px 0 24px;
+  }
+  .main_slide .slide_img {
+    width: 130.4px;
+    height: 181.11px;
+  }
+  .main_slide .student {
+    width: 164px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .main_slide .student_name {
+    width: 150px;
+  }
+  .main_slide .teacher_slide {
+    opacity: 1;
+    width: 150px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .main_slide .teacher_slide_name {
+    opacity: 1;
+    width: 150px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+/*# sourceMappingURL=slider_student.css.map */

@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css..">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/style_768.css">
+    <link rel="stylesheet" href="style/slider_student.css">
+    <link rel="stylesheet" href="style/style_480.css">
+    <link rel="stylesheet" href="style/style_320.css">
 </head>
 
 <body>
@@ -14,7 +18,17 @@
         <div class="head">
             <div class="logo"><img src="img/Логотип ITEC.svg" alt=""></div>
             <span class="entry">Войти</span>
-            <div class="nav-toggle"><span></span></div>
+            <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                <path
+                    class="line_ham top"
+                    d="m 0,0 h 100 c 19.823,0 23.7,19.326 23.7,24.878 0,21.852 -19.327,24.922 -24.0,24.922 h -50"/>
+                <path
+                    class="line_ham middle"
+                    d="m 0,50 h 100" />
+                <path
+                    class="line_ham bottom"
+                    d="m 100,100 h -100 c 0,0 -22.5,-0.802 -23.5,-24.366 0,-23.564 24.5,-25.634 24.9,-26.034 h 50"/>
+            </svg>          
             <nav>
                 <ul id="menu">
                     <li><a href="">Курсы</a></li>
@@ -76,19 +90,19 @@
                 <div class="rectangle"></div>
                 <span class="itec_title">ITEC – правильный выбор!</span>
                 <div class="text_3 left_title"><span>Мы хотим помочь тем, кто решил начать карьеру 
-                        в&nbsp;сфере&nbsp;информационных технологий. Основная цель 
+                        в&nbsp;сфере информационных технологий. Основная цель 
                         нашей программы – подготовить специалистов, которые 
                         действительно будут востребованы 
                         и полезны для работодателей.</span>
                 </div>
                 <div>
                     <div class="itec_img"><img src="img/Itec правильный выбор Картинка.svg" alt=""></div>
-                    <div class="text_3 right_title"><span>Мы&nbsp;хорошо&nbsp;знаем,&nbsp;что&nbsp;нельзя&nbsp;стать&nbsp;программистом
+                    <div class="text_3 right_title"><span>Мы&nbsp;хорошо&nbsp;знаем,&nbsp;что&nbsp;нельзя&nbsp;стать программистом
                             за&nbsp;несколько дней, чтобы не обещали другие&nbsp;курсы.
                             Наша&nbsp;задача заключается в том, чтобы все&nbsp;обучающиеся
                             узнали&nbsp;и&nbsp;поняли основы. Чтобы у каждого была&nbsp;твёрдая
                             база,&nbsp;с&nbsp;которой он смог бы развиваться как&nbsp;специалист.
-                            Уверены,&nbsp;что&nbsp;только такой подход поможет&nbsp;построить
+                            Уверены, что&nbsp;только такой подход поможет&nbsp;построить
                             успешную карьеру в IT.</span>
                     </div>
                 </div>
@@ -99,6 +113,7 @@
                 <div class="rectangle_white"></div>
                 <div class="format_title">
                     <span>У нас есть ТРИ формата обучения</span>
+                    <span>У нас есть 3 формата обучения:</span>
                 </div>
                 <div class="format_text">
                     <span>Учитесь так, как ВАМ удобно!</span>
@@ -132,6 +147,7 @@
             <div class="container">
                 <div class="vibor">
                     <span>Выбирая нас, вы получаете</span>
+                    <span>Выбирая нас, вы получаете:</span>
                     <div class="fon">
                         <div class="left_block">
                             <div>
@@ -158,6 +174,24 @@
                                 <span class="span_bot">Интересные бонусы :)</span>
                                 
                             </div>
+                        </div>
+                    </div>
+                    <div class="fon_min">
+                        <div>
+                            <img src="img/kurs/check.svg" alt="">
+                            <span>Доступ ко всем учебным видео</span>
+                        </div>
+                        <div>
+                            <img src="img/kurs/check.svg" alt="">
+                            <span>Гибкая оплата курсов</span>
+                        </div>
+                        <div>
+                            <img src="img/kurs/check.svg" alt="">
+                            <span>Мы учим на реальных проектах</span>
+                        </div>
+                        <div>
+                            <img src="img/kurs/check.svg" alt="">
+                            <span>Интересные бонусы :)</span>
                         </div>
                     </div>
                 </div>
@@ -210,18 +244,21 @@
                 <div class="cours_type">
                     <div class="nth_cours_block">
                         <div class="nth_cours_name">Frontend</div>
+                        <div class="nth_cours_name_min">Web- разработка</div>
                         <div class="nth_cours_img"><img src="img/kurs/Group.svg" alt=""></div>
                         <span>Старт 15 сентября</span>
                         <button class="desc">Подробнее</button>
                     </div>
                     <div class="nth_cours_block">
                         <div class="nth_cours_name">HTML</div>
+                        <div class="nth_cours_name_min">Data science</div>
                         <div class="nth_cours_img"><img src="img/kurs/Group.svg" alt=""></div>
                         <span>Старт 15 сентября</span>
                         <button class="desc">Подробнее</button>
                     </div>
                     <div class="nth_cours_block">
                         <div class="nth_cours_name">QA Engineer<br />(тестировщик)</div>
+                        <div class="nth_cours_name_min">QA Engineer<br />(тестировщик)</div>
                         <div class="nth_cours_img"><img src="img/kurs/Group.svg" alt=""></div>
                         <span>Старт 15 сентября</span>
                         <button class="desc">Подробнее</button>
@@ -232,7 +269,7 @@
             </div>
         </section>
         <section>
-            <div class="diplon_conteiner">
+            <div class="diplom_conteiner">
                 <div class="rectangle"></div>
                 <div class="diplom_project">
                     <span>Дипломные проекты наших студентов</span>
@@ -242,9 +279,57 @@
                         <img src="img/diplom/Group 21.svg" alt="">
                     </div>
                     <div class="slider">
-                        
                         <div class="prev"></div>
-                        <div class="slider_main"><span>Здесь должен быть слайдер</span></div>
+                        <div class="slider_main">
+                            <div class="slide_element prev_slide">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова1</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                            <div class="slide_element main_slide">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова2</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                            <div class="slide_element next_slide">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова3</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                            <div class="slide_element">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова4</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                            <div class="slide_element">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова5</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                            <div class="slide_element">
+                                <div class="opacity"></div>
+                                <div class="slide_img"><img src="" alt=""></div>
+                                <span class="student">Проект, реализованный на базе платформы Falcon Space</span>
+                                <span class="student_name">Яна Машкова6</span>
+                                <span class="teacher_slide">Преподаватель:</span>
+                                <span class="teacher_slide_name">Иван Смирнов</span>
+                            </div>
+                        </div>
                         <div class="next"></div>
                     </div>
                 </div>
@@ -273,7 +358,7 @@
             <div class="conteiner_teacher">
                 <div class="rectangle rectangle_teacher"></div>
                 <pan class="text_title_teacher">Наши преподаватели</pan>
-                <span class="text_teacher">Команда состоит из эксперт-преподавателей, имеющих опыта 
+                <span class="text_teacher">Команда состоит из эксперт&#8209;преподавателей, имеющих опыт 
                     работы в крупных известных компаниях, таких как EPAM, IBA
                     Group, Wargamming, Itransition, BELHARD, ISsoft, Exadel,
                     SoftClub, iTechArt Group, ScienceSoft и др.</span>
@@ -327,6 +412,22 @@
                             сомнения, то наша команда поможет подобрать 
                             нужный курс. Пройдите наше тестирование.</span>
                     </div>
+                </div>
+                <div class="block_text_faq_min">
+                    <span class="text_faq faq_primary">Когда стартует набор в новые группы?</span>
+                    <div class="faq_info">
+                        <div class="rectangle_faq_absolut"></div>
+                        <span>Каждое занятие является неотъемлемой частью 
+                            курса, поэтому мы не видим необходимости в 
+                            проведении пробных занятий. Если у Вас есть 
+                            сомнения, то наша команда поможет подобрать 
+                            нужный курс. Пройдите наше тестирование.</span>
+                    </div>
+                    <span class="text_faq">Как решить вопрос о пропуске занятий?</span>
+                    <span class="text_faq">Где можно ознакомиться с расписанием занятий?</span>
+                    <span class="text_faq">Есть ли у школы онлайн-занятия?</span>
+                    <span class="text_faq">Сколько длится 1 занятие?</span>
+                    <span class="text_faq">Каков порядок оплаты за обучение?</span>
                 </div>
             </div>
         </section>
@@ -383,10 +484,13 @@
                         <a href="">Web-разработка</a>
                         <a href="">Data science</a>
                         <a href="">QA Engineer (тестировщик)</a>
-                        <a href="">Тест на IT-специальность</a>
+                        <a href="">Тест на IT&#8209;специальность</a>
                     </div>
                 </div>
                 <div class="footer_contacts">
+                    <div class="footer_logo_min">
+                        <img src="img/footer/Логотип_ITEC.svg" alt="">
+                    </div>
                     <div class="icons">
                         <div class="icon">
                             <img src="img/footer/instagram.svg" alt="">
@@ -418,5 +522,5 @@
         </section>
     </footer>
 </body>
-
+<script src="scripts/slider.js"></script>
 </html>

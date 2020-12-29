@@ -1,0 +1,707 @@
+@charset "UTF-8";
+@media only screen and (max-width: 480px) {
+  .head {
+    position: relative;
+    margin: 10px 20px 9.45px 20px;
+  }
+  .entry {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    width: 41px;
+    height: 16px;
+    border: none;
+    margin: 0 45px 0 0;
+  }
+  .logo {
+    width: 74.02px;
+    height: 29.45px;
+    margin-right: auto;
+  }
+  .contact {
+    display: none;
+  }
+  nav {
+    width: 0px;
+    opacity: 0;
+  }
+  .ham {
+    opacity: 1;
+    width: 30px;
+    height: 26.54px;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    overflow: visible;
+  }
+  #menu li {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  /*main*/
+  /*Title*/
+  .content_title {
+    height: auto;
+  }
+  .container {
+    max-width: 536px;
+    margin: 0 20px auto 20px;
+  }
+  .content_name {
+    width: 100%;
+    height: 98px;
+    margin: auto auto 0 0;
+    font-size: 44px;
+    line-height: 97.4%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text {
+    display: none;
+  }
+  .cours {
+    margin-top: 17px;
+    max-width: 324px;
+    height: 164px;
+  }
+  .cours ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+  }
+  .cours ul li {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 97.4%;
+    color: #524000;
+  }
+  .text_2 {
+    display: none;
+  }
+  #button_curs {
+    width: 324px;
+    height: 65px;
+    font-size: 23px;
+    line-height: 28px;
+    margin: 7px auto 11px auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .adres {
+    display: none;
+  }
+  .main_icon {
+    width: 160px;
+    height: 165.71px;
+    top: 105px;
+    right: 26px;
+    left: auto;
+  }
+  /*Блок с кнопкой*/
+  .test {
+    margin: 31px auto 35px auto;
+  }
+  .test div {
+    height: 51px;
+  }
+  .test div span:first-child {
+    display: none;
+  }
+  .test div span:last-child {
+    max-width: 455px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .test_button_test {
+    margin: 19px auto 35px auto;
+  }
+  #test {
+    font-size: 20px;
+    width: 263px;
+    height: 53px;
+  }
+  /*Блок в правильным выбором*/
+  .itec {
+    margin: 0 20px 46px 20px;
+    max-width: 536px;
+  }
+  .rectangle {
+    display: none;
+  }
+  .itec_title {
+    font-size: 45px;
+    width: 100%;
+    height: auto;
+  }
+  .left_title {
+    display: none;
+  }
+  .right_title {
+    width: 100%;
+    margin: 7px 0 0 auto;
+  }
+  .text_3 span {
+    font-size: 22px;
+    line-height: 180%;
+  }
+  .itec_img {
+    display: none;
+  }
+  /*Блок про три формы обучения*/
+  .content_format {
+    height: auto;
+    background: linear-gradient(275.08deg, #091153 -17.51%, #1336b5 97.22%);
+  }
+  .rectangle_white {
+    display: none;
+  }
+  .format_title {
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 40px;
+    margin-top: 22px;
+    margin-bottom: 18.65px;
+    text-align: center;
+  }
+  .format_title span:first-child {
+    display: none;
+  }
+  .format_title span:last-child {
+    display: block;
+  }
+  .format_text {
+    display: none;
+  }
+  .format_type {
+    max-width: 303px;
+    height: 211.86px;
+    margin-top: 0px;
+    margin-bottom: 34.49px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .format_type div {
+    margin-top: 0;
+    width: 255px;
+    height: 58.62px;
+    border-radius: 10px;
+  }
+  .format_type div span {
+    display: none;
+  }
+  .format_type div .format_type_img {
+    background: -webkit-gradient(linear, left top, left bottom, from(#5599ff), to(#0f32ae));
+    background: linear-gradient(180deg, #5599ff 0%, #0f32ae 100%);
+  }
+  .format_type div .format_type_img .format_type_img_span {
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    width: 122.58px;
+    display: block;
+  }
+  .format_type div .format_type_img img {
+    display: none;
+  }
+  .format_type_img {
+    width: 122.58px;
+    height: 126.73px;
+  }
+  .format_type_img img {
+    width: 30px;
+    height: 30px;
+    margin: 25.63px auto 0 auto;
+  }
+  /*Блок про выбор ITEC*/
+  .vibor {
+    max-width: 536px;
+    margin: 49px 20px 0 20px;
+  }
+  .vibor span {
+    max-width: 526px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 27px;
+    text-transform: none;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: left;
+  }
+  .vibor span:first-child {
+    display: none;
+  }
+  .vibor span:nth-child(2) {
+    display: block;
+  }
+  .fon {
+    display: none;
+  }
+  .fon_min {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .fon_min div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 24px;
+  }
+  .fon_min div img {
+    width: 37px;
+    height: 36px;
+    margin-right: 19px;
+  }
+  .fon_min div span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 135%;
+    color: #352b05;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    text-align: left;
+  }
+  /*Скрытый блок*/
+  .container_put {
+    display: none;
+  }
+  /*Ближайшие курсы*/
+  .conteiner_nht_cours {
+    min-width: 440px;
+    overflow: visible;
+    margin-top: 89px;
+    overflow: visible;
+    margin: auto 68px;
+  }
+  .nth_cours {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: uppercase;
+  }
+  .cours_type {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin: 35px 0 39px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 686px;
+  }
+  .cours_type .nth_cours_block:first-child, .cours_type .nth_cours_block:last-child {
+    width: 175px;
+    height: 231.13px;
+    margin-bottom: 16.87px;
+  }
+  .cours_type .nth_cours_block:first-child span, .cours_type .nth_cours_block:last-child span {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+  }
+  .cours_type .nth_cours_block:first-child .nth_cours_img, .cours_type .nth_cours_block:last-child .nth_cours_img {
+    width: 81.86px;
+    height: 110.31px;
+  }
+  .cours_type .nth_cours_block:nth-child(2) {
+    width: 212px;
+    height: 280px;
+  }
+  .cours_type .nth_cours_block:nth-child(2) .nth_cours_name_min {
+    height: 68px;
+    font-size: 27px;
+    line-height: 36px;
+    top: 69.44px;
+    z-index: 1;
+  }
+  .cours_type .nth_cours_block:nth-child(2) span {
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+  }
+  .cours_type .nth_cours_block:nth-child(2) .nth_cours_img {
+    width: 99.16px;
+    height: 133.64px;
+  }
+  .nth_cours_name {
+    display: none;
+  }
+  .nth_cours_name_min {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 68px;
+    font-size: 19px;
+    line-height: 32px;
+    top: 57px;
+    font-family: Gadugi Arial;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
+  }
+  .all_cours {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .all_cours_hide {
+    display: none;
+  }
+  .desc {
+    display: none;
+  }
+  /*Контейнер с аисистом в выборе*/
+  .conteiner_help {
+    display: none;
+  }
+  /*Преподаватели*/
+  .conteiner_teacher {
+    max-width: 536px;
+    margin: 92px 20px 0 20px;
+    overflow: visible;
+  }
+  .text_title_teacher {
+    width: 440px;
+    height: 102px;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.02em;
+  }
+  .text_teacher {
+    width: 100%;
+    height: 323px;
+    font-size: 23px;
+    line-height: 190%;
+    margin-top: 21px;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+  .teacher_img_conteiner {
+    width: 709px;
+    margin-top: 42px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .teacher_img_conteiner .div_img_info:first-child, .teacher_img_conteiner .div_img_info:last-child {
+    margin-top: 23px;
+  }
+  .teacher_img_conteiner .div_img_info:first-child .img_teacher, .teacher_img_conteiner .div_img_info:last-child .img_teacher {
+    width: 150px;
+    height: 253px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .teacher_img_conteiner .div_img_info:first-child .teacher_name, .teacher_img_conteiner .div_img_info:last-child .teacher_name {
+    display: none;
+  }
+  .teacher_img_conteiner .div_img_info:first-child .teacher_profil, .teacher_img_conteiner .div_img_info:last-child .teacher_profil {
+    display: none;
+  }
+  .teacher_img_conteiner .div_img_info:first-child .teacher_staj, .teacher_img_conteiner .div_img_info:last-child .teacher_staj {
+    display: none;
+  }
+  .teacher_img_conteiner .div_img_info:nth-child(2) .img_teacher {
+    width: 235px;
+    height: 328px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .teacher_img_conteiner .div_img_info:nth-child(2) .teacher_name {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 206px;
+    height: 22px;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 29px;
+  }
+  .teacher_img_conteiner .div_img_info:nth-child(2) .teacher_profil {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 324px;
+    height: 26px;
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 7px;
+  }
+  .teacher_img_conteiner .div_img_info:nth-child(2) .teacher_staj {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 211px;
+    height: 20px;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 23px;
+    margin-top: 13px;
+    color: #726742;
+  }
+  /*блок с факам*/
+  .conteiner_faq {
+    max-width: 534px;
+    margin: 87px 20px auto 20px;
+  }
+  .title_text_faq {
+    width: 460px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 45px;
+    color: #2E2401;
+    margin-top: 0;
+  }
+  .conteiner_faq_info {
+    display: none;
+  }
+  .block_text_faq_min {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .block_text_faq {
+    max-width: 336px;
+    height: 356px;
+    margin: 24px auto auto 0;
+  }
+  .text_faq {
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 160%;
+    color: #352A02;
+    margin-bottom: 40px;
+  }
+  .faq_primary {
+    color: #5C5741;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  .faq_second {
+    font-weight: normal;
+  }
+  .faq_info {
+    background: #fff;
+    width: 100%;
+    height: 353px;
+    margin: 8px 0 0 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .faq_info span {
+    width: 100%;
+    height: 100%;
+    margin-left: 18px;
+    font-size: 24px;
+    line-height: 180%;
+    color: #4B3C05;
+  }
+  .rectangle_faq_absolut {
+    width: 9px;
+    height: 92px;
+    left: 0px;
+    top: 12px;
+  }
+  /*Место для кучи стилей*/
+  .last_block_ura {
+    display: none;
+  }
+  /*футер*/
+  footer {
+    margin-top: 50px;
+  }
+  .footer_main {
+    min-width: 480px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 23px 19px 31px 20px;
+  }
+  .footer_consult_block {
+    margin: 0 0 0 0;
+    height: 233.66px;
+    width: 480px;
+  }
+  .footer_consult_block span {
+    margin-left: 0;
+    width: 480px;
+    height: 63px;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .footer_consult_block form {
+    height: auto;
+  }
+  .footer_consult_block form input[type="text"] {
+    width: 324px;
+    height: 57px;
+    font-size: 23px;
+    line-height: 28px;
+    margin: 0 auto 24px 0;
+  }
+  .footer_consult_block form input[type="text"]:nth-child(2) {
+    display: none;
+  }
+  .footer_consult_block form button {
+    width: 324px;
+    height: 58.66px;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto 0 0;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_logo_min {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 127px;
+    height: 47.2px;
+  }
+  .footer_info_block {
+    height: auto;
+    width: auto;
+    margin: 48px 0 20px 0;
+  }
+  .info_column {
+    width: auto;
+    height: 206px;
+  }
+  .info_column a {
+    width: auto;
+  }
+  .info_column_2 {
+    width: auto;
+    height: 232px;
+  }
+  .info_column_2 a {
+    width: auto;
+  }
+  .info_column_2 a:nth-child(4) {
+    width: 188px;
+    height: 52px;
+  }
+  .info_column a:last-child, .info_column_2 a:last-child {
+    margin-bottom: 0;
+  }
+  .info_column a, .info_column_2 a {
+    height: 26px;
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 19px;
+  }
+  .footer_contacts {
+    width: auto;
+    margin: 20.8px auto auto 0;
+  }
+  .icons {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    width: 180px;
+    margin-bottom: 24.55px;
+    margin-top: 37.8px;
+  }
+  .icon {
+    width: 45.06px;
+    height: 43.45px;
+  }
+  .wrapper_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .location_footer {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 235px;
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
+  .location_footer span {
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DEE4EE;
+    margin-bottom: 17px;
+  }
+  .location_footer a {
+    width: auto;
+    text-align: left;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #DEE4EE;
+  }
+  .numbers {
+    display: none;
+  }
+  .footer_last_block {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+/*# sourceMappingURL=style_320.css.map */
