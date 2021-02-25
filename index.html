@@ -7,10 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css..">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style_768.css">
     <link rel="stylesheet" href="style/slider_student.css">
-    <link rel="stylesheet" href="style/style_480.css">
-    <link rel="stylesheet" href="style/style_320.css">
 </head>
 
 <body>
@@ -28,15 +25,29 @@
                 <path
                     class="line_ham bottom"
                     d="m 100,100 h -100 c 0,0 -22.5,-0.802 -23.5,-24.366 0,-23.564 24.5,-25.634 24.9,-26.034 h 50"/>
-            </svg>
-            <nav>
-                <ul id="menu">
-                    <li><a href="">Курсы</a></li>
-                    <li><a href="">Тест</a></li>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">IT-новости</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
+            </svg>          
+            <nav class="">
+                <div class="menu_mobile">
+                    <div class="logo_min"><img src="img/Логотип ITEC_min.svg" alt=""></div>
+                    <ul id="menu">
+                        <li class="dropdown"><span href="">Курсы</span>
+                            <div class="cors_tupe_only_sj cour_type">
+                                <div class="first"><span>Онлайн-обучение</span></div>
+                                <span>Офлайн-обучение</span>
+                                <span>Видеокурс</span>
+                            </div>
+                        </li>
+                        <li><a href="">Тест</a></li>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">IT-новости</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <div class="contact_min">
+                        <span>8 (029) 556 40 29</span>
+                        <span>8 (029) 556 40 29</span>
+                    </div>
+                </div>
+                
             </nav>
             <div class="contact">
                 <div>
@@ -523,4 +534,5 @@
     </footer>
 </body>
 <script src="scripts/slider.js"></script>
+<script src="scripts/nav.js"></script>
 </html>
