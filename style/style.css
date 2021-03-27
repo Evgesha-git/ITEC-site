@@ -814,10 +814,6 @@ main {
   margin-bottom: 82px;
 }
 
-.vibor span:nth-child(2) {
-  display: none;
-}
-
 .fon {
   display: -webkit-box;
   display: -ms-flexbox;
